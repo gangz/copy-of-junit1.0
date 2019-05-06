@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; I) [Netscape]">
+   <TITLE>JUnit 1.0</TITLE>
+</HEAD>
+<BODY>
+
+<H1>
+<IMG SRC="doc/logo.gif" HEIGHT=26 WIDTH=38> - JUnit 1.0</H1>
+02/28/98
+<H3>
+
+<HR>Background</H3>
+JUnit is a simple unit testing framework for Java. It was implemented by
+Kent Beck and Erich Gamma.
+<H3>
+Contents</H3>
+<PRE>README.html&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this file slightly moddified for Bucknell's local environment
+&nbsp;&nbsp;&nbsp; test.jar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a jar file with the junit classes
+&nbsp;&nbsp;&nbsp; test&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the source code
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; framework&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the testing framework
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; textui&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a command line interface to run tests
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ui&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a simple graphical user interface to run tests
+&nbsp;&nbsp;&nbsp; samples&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; some example test cases and extensions to the framework
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; money&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a sample illustrating testing
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; arithmetic with multiple currencies
+&nbsp;&nbsp;&nbsp; doc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; documentation
+&nbsp;&nbsp;&nbsp; javadoc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; javadoc documentation</PRE>
+
+Documentation</H3>
+JUnit comes with the following documentation:
+<UL>
+<LI>
+a <A HREF="doc/cookbook.htm">cookbook</A></LI>
+
+<LI>
+<A HREF="javadoc/packages.html">javadoc</A> reference documentation.</LI>
+</UL>
+
+<H3>
+Samples</H3>
+You can find several sample test cases in the samples package:
+<UL>
+<LI>
+SimpleTest.java - some simple test cases</LI>
+
+<LI>
+VectorTest.java - test cases for java.util.Vector</LI>
+
+<LI>
+money.MoneyTest - test cases for a sample multi currency arithmetic implementation</LI>
+</UL>
+In addition, the sample package illustrates how you can extend the unit
+testing framework:
+<UL>
+<LI>
+TestDecorator - A Decorator for Test. You can use it as the base class
+for implementing decorator that extend test cases.</LI>
+
+<LI>
+ActiveTest - A Decorator which runs each test in a separate thread.</LI>
+
+<LI>
+TestSetup - A Decorator to set up and tear down additional fixture state.
+Subclass TestSetup and insert it into your tests when you want to set up
+additional state once before the tests are run.</LI>
+
+<BR>&nbsp;</UL>
+
+</BODY>
+</HTML>
